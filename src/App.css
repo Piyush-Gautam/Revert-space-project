@@ -1,38 +1,157 @@
-.App {
-  text-align: center;
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Courier New', Courier, monospace;
+  margin: 2rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(12rem,16rem));
+  gap: 2rem;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  size:inherit;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card{
+  overflow: hidden;
+  box-shadow: 0 2px 20px grey;
+  border: radius 3cm;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 200ms ease-in;
+  
+}
+.card_image{
+  height: 12rem;
+  width: 100%;
+  object-fit:cover;
+}
+.card_title{
+  padding: 1rem;
+}
+.card_description{
+  padding: 0 1rem;
+}
+.card_button{
+  padding: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  margin:1rem;
+  border:2px solid red;
+  background: transparent;
+  color: red;
+  border-radius: 1cm;
+  transition: background 200ms ease-in, color 200ms ease-in;
+}
+.card:hover{
+  transform:scale(1.02);
+}
+.card_button:hover{
+  background: red;
   color: white;
 }
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400|Baloo+Da+2:400,600&display=swap");
 
-.App-link {
-  color: #61dafb;
+html,
+body {
+  z-index: -1;
+  margin: 0px;
+  padding: 0px;
+  color: #fff;
+  height: 100%;
+  background-color: #021b39;
+  font-family: "Baloo Da 2", cursive;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
+.App a {
+  color: #828ed4;
+  transition: 0.2s all ease-in-out;
+}
+.App a:hover {
+  opacity: 0.75;
+}
+
+.App {
+  z-index: 10;
+  text-align: center;
+  margin: 0px 24px;
+  transition: 0.1s all ease-in-out;
+  animation: app-enter-anim 0.1s ease-out;
+}
+.App-text {
+  opacity: 1;
+  transition: 0.1s all ease-in-out;
+}
+.App-particles__container {
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  z-index: 0;
+}
+.App-particles__container canvas {
+  transition: 0.2s all ease-in-out;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.App-text__title {
+  margin: 0px;
+  font-weight: 400;
+  font-size: 3.25rem;
+  letter-spacing: 0.5rem;
+  font-family: "Oswald", sans-serif;
+}
+.App-text__body {
+  margin: 0px;
+  margin-top: 12px;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+@keyframes app-enter-anim {
   from {
-    transform: rotate(0deg);
+    opacity: 0.8;
+    transform: scale(0.5);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transfrom: scale(1);
+  }
+}
+@-webkit-keyframes app-enter-anim {
+  from {
+    opacity: 0.8;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transfrom: scale(1);
   }
 }
