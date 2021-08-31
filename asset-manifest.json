@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Revert-space-project/static/css/main.8fec7a1c.chunk.css",
+    "main.js": "/Revert-space-project/static/js/main.5787430d.chunk.js",
+    "main.js.map": "/Revert-space-project/static/js/main.5787430d.chunk.js.map",
+    "runtime-main.js": "/Revert-space-project/static/js/runtime-main.1e8a9fa6.js",
+    "runtime-main.js.map": "/Revert-space-project/static/js/runtime-main.1e8a9fa6.js.map",
+    "static/js/2.ce00f8b6.chunk.js": "/Revert-space-project/static/js/2.ce00f8b6.chunk.js",
+    "static/js/2.ce00f8b6.chunk.js.map": "/Revert-space-project/static/js/2.ce00f8b6.chunk.js.map",
+    "static/js/3.60bc5363.chunk.js": "/Revert-space-project/static/js/3.60bc5363.chunk.js",
+    "static/js/3.60bc5363.chunk.js.map": "/Revert-space-project/static/js/3.60bc5363.chunk.js.map",
+    "index.html": "/Revert-space-project/index.html",
+    "static/css/main.8fec7a1c.chunk.css.map": "/Revert-space-project/static/css/main.8fec7a1c.chunk.css.map",
+    "static/js/2.ce00f8b6.chunk.js.LICENSE.txt": "/Revert-space-project/static/js/2.ce00f8b6.chunk.js.LICENSE.txt",
+    "static/media/01.b5e071a1.jpg": "/Revert-space-project/static/media/01.b5e071a1.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1e8a9fa6.js",
+    "static/js/2.ce00f8b6.chunk.js",
+    "static/css/main.8fec7a1c.chunk.css",
+    "static/js/main.5787430d.chunk.js"
+  ]
+}
